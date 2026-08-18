@@ -1,0 +1,16 @@
+
+# Column mapping 
+#   perturbation_col = "gene"
+#   cell_line_col    = "cell_line"
+#   control_value    = "ctrl"
+
+[K562]
+val = [
+    "AMIGO3", "CAD", "DAD1", "HSPA9", "MRGBP", "SYVN1",
+    "TIMM23",
+]
+test = [
+    "CCND3", "CREB1", "DDOST", "EIF2B3", "FECH", "KCTD16",
+    "MANF", "OST4", "P4HB", "PPWD1", "SEC61G", "SPCS3",
+    "TIMM44", "TMED2", "TTI2",
+]

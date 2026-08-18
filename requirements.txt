@@ -1,0 +1,13 @@
+torch>=2.0
+numpy>=1.24
+scanpy>=1.9
+anndata>=0.9
+scipy>=1.10
+scikit-learn>=1.2
+pandas>=1.5
+tqdm>=4.64
+joblib>=1.2
+tomli>=2.0; python_version < "3.11"
+rdkit>=2023.03          # optional, only for chemical-perturbation (drug) mode
+tensorboard>=2.12       # optional, for training monitoring
+cell-eval>=0.2.0        # for evaluation metrics (Overlap, PR-AUC, MAE, MSE, Pearson)

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Datasets and generated outputs
+data/
+h5ad_data/
+results/
+paper_results/
+runs/
+checkpoints/
+embedding_weight/
+*.h5ad
+*.h5
+*.pt
+*.pth
+*.ckpt
+events.out.tfevents.*
+
+# Logs and temporary files
+*.log
+tmp/
+temp/

@@ -1,0 +1,17 @@
+
+[split]
+column = "split_ood_finetuning"
+
+[ood_drugs]
+drugs = [
+    "CUDC-101", "CUDC-907", "Dacinostat", "Givinostat", "Hesperadin",
+    "Pirarubicin", "Raltitrexed", "Tanespimycin", "Trametinib",
+]
+
+[stats]
+train_batches = 10766
+val_batches = 8485
+test_batches = 540
+train_drugs = 179
+ood_drugs = 9
+cell_types = ["A549", "K562", "MCF7"]

@@ -1,0 +1,17 @@
+# Norman dataset — FIXED explicit split
+# Column mapping:
+#   perturbation_col = "gene"
+#   cell_line_col    = "cell_line"
+#   control_value    = "ctrl"
+
+[K562]
+val = [
+    "AHR", "CDKN1A", "COL1A1", "HNF4A", "IGDCC3", "IKZF3",
+    "LHX1", "PRTG", "SGK1", "SLC6A9",
+]
+test = [
+    "BAK1", "CBL", "CDKN1C", "CEBPE", "CKS1B", "DUSP9",
+    "FOSB", "FOXA1", "FOXF1", "HOXA13", "HOXC13", "MAML2",
+    "PRDM1", "PTPN12", "PTPN13", "RUNX1T1", "S1PR2", "TBX3",
+    "TMSB4X", "ZBTB10",
+]
