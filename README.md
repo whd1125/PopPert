@@ -10,10 +10,8 @@ This repository contains the official research implementation of **PopPert**, a 
 
 - Models zero inflation and non-negative expression with zero-inflated truncated Gaussian mixtures (ZI-GMMs).
 - Captures cross-gene dependence with a factor-decomposed Gaussian copula.
-- Predicts perturbation-induced distribution shifts with a Transformer decoder.
-- Supports genetic perturbations (Replogle, Adamson, and Norman) and chemical perturbations (sci-Plex).
 - Includes an alternative zero-inflated negative binomial (ZINB) marginal model.
-- Produces AnnData files that can be evaluated with [`cell-eval`](https://github.com/ArcInstitute/cell-eval).
+
 
 ## Method overview
 
