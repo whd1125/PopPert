@@ -3,18 +3,6 @@
 Population-level joint-distribution modeling for single-cell perturbation prediction.
 
 This repository contains the official research implementation of **PopPert**, a model that predicts how a perturbation changes a population of cells. Instead of learning a one-to-one mapping between control and perturbed cells, PopPert models gene-wise expression distributions together with cross-gene dependence and generates a virtual perturbed cell population.
-
-> **Release status:** research code. Dataset files and pretrained checkpoints are not included in the repository.
-
-## Highlights
-
-- Models zero inflation and non-negative expression with zero-inflated truncated Gaussian mixtures (ZI-GMMs).
-- Captures cross-gene dependence with a factor-decomposed Gaussian copula.
-- Predicts perturbation-induced distribution shifts with a Transformer decoder.
-- Supports genetic perturbations (Replogle, Adamson, and Norman) and chemical perturbations (sci-Plex).
-- Includes an alternative zero-inflated negative binomial (ZINB) marginal model.
-- Produces AnnData files that can be evaluated with [`cell-eval`](https://github.com/ArcInstitute/cell-eval).
-
 ## Method overview
 
 PopPert first summarizes control and perturbed cell populations as distribution parameters. A Transformer then predicts the residual change from the control population to the target perturbation. During generation, the predicted marginals and copula factors are sampled jointly to reconstruct a virtual perturbed population.
