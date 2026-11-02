@@ -176,7 +176,7 @@ The BibTeX entry will be added after publication.
 
 ## License
 
-A software license has not yet been selected for this release. Add a `LICENSE` file before treating the repository as open source or accepting reuse and redistribution.
+MIT
 
 ## Acknowledgements
 
