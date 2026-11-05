@@ -52,9 +52,7 @@ pip install -r requirements.txt
 On Windows, run these commands in WSL2. For a CUDA build of PyTorch, follow the platform-specific command on the [PyTorch installation page](https://pytorch.org/get-started/locally/) before installing the remaining requirements.
 
 ## Data preparation
-
-The raw datasets are not redistributed here. Obtain each dataset from its original provider and make sure that its license permits your intended use. Place the AnnData files in the following layout:
-
+Raw Data Coming Soon!
 ```text
 data/
 |-- replogle/
@@ -132,8 +130,6 @@ results/<dataset>/<run_name>/inference/inference_real.h5ad
 results/<dataset>/<run_name>/cell_eval/
 ```
 
-These paths are excluded from Git because datasets, checkpoints, and experiment outputs can be large. Publish model weights through a GitHub Release or a model-hosting service rather than committing them directly to the repository.
-
 ## Optional pretrained gene embeddings
 
 Both training implementations look for an optional checkpoint at:
@@ -142,7 +138,7 @@ Both training implementations look for an optional checkpoint at:
 embedding_weight/best_model.pt
 ```
 
-If it is absent, the code reports a warning and trains the embedding layer from its initialized values. If you release this checkpoint separately, place it at the path above or pass `--pretrin_embedding_path` to the training script.
+If it is absent, the code reports a warning and trains the embedding layer from its initialized values.
 
 ## Running stages separately
 
@@ -171,8 +167,6 @@ If you use PopPert in your work, please cite the accompanying paper:
 PopPert: Population-level Joint-Distribution Modeling for
 Single-Cell Perturbation Prediction.
 ```
-
-The BibTeX entry will be added after publication.
 
 ## License
 
